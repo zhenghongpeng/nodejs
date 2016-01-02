@@ -34,15 +34,15 @@
                </tr>
            </thead>
            <tbody>
-               <tr ng-repeat="site in websites track by $index">
-                   <td>{{site.name}}</td>
+               <tr ng-repeat="website in websites track by $index">
+                   <td>{{website.name}}</td>
                    <td>
                        <button ng-click="select($index)" class="btn btn-warning pull-right">
                            <span class="glyphicon glyphicon-pencil">
 
                            </span>
                        </button>
-                       <button ng-click="remove($index)" class="btn btn-danger pull-right">
+                       <button ng-click="remove(website._id)" class="btn btn-danger pull-right">
                            <span class="glyphicon glyphicon-remove">
 
                            </span>

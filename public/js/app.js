@@ -42,8 +42,8 @@ function ($scope, $http) {
             });
     };
     
-    $scope.remove = function (index) {
-    $http.delete("api/website/" + index)
+    $scope.remove = function (id) {
+    $http.delete("api/website/" + id)
     .success(function (response) {
         $scope.websites = response;
         });
